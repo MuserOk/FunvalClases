@@ -1,0 +1,18 @@
+body{
+    background-color:#afd7ee;
+    font-size: 20px;
+}
+
+#titulo{
+    color:rgb(19, 24, 88);
+    font-size: 45px;
+}
+
+.parrafoDescripcion{
+    color: rgb(149, 21, 4);
+}
+
+.final{
+    background-color: #d60fbf86;
+}
+

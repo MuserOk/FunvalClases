@@ -1,0 +1,36 @@
+h1 { /*un selector de etiqueta tiene mas valor que un selector de clase*/
+    color:lightseagreen;
+}
+
+/*.clases*/
+.subtitulo-3 {
+    color:red;
+}
+
+/* #id-unico*/
+#temas-dictados{
+    color:blueviolet;
+    /*fontzide*/
+}
+
+
+
+.card{ /*LOS CAMBIOS DADOS AL PADRE HEREDAN ALGUNOS ATRIBUTOS A LOS HIJOS*/
+    background-color:#033268;
+    color:white;
+    font-size: 20px;
+}
+
+#nombre{
+    font-size: 25px;
+}
+#apellido{
+    font-size: 25px;
+}
+#edad{
+    font-size: 15px;
+}
+#correoE{
+    color:red;
+    font-size: 20px;
+}
