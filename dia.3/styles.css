@@ -1,0 +1,82 @@
+.padre{
+    display: flex;
+    gap: 8px;
+    border: solid 3px red;
+    /*padding: 20px;*/
+}
+.hijo-1Izq{
+    padding: 20px 10px 20px 15px;
+}
+.hijo-2Der{
+    padding: 20px 8px 20px 10px;
+}
+.eje1{
+    width:200px;
+    height:200px;
+    background-color: lightblue;
+    padding: 20px;
+}
+.eje2-d1{
+    background-color: rebeccapurple;
+}
+.eje2-d2{
+    background-color: red;
+    margin: 30px;
+}
+.eje3-1{
+    background-color: darkblue;
+    margin: 20px;
+}
+.eje3-2{
+    background-color: pink;
+    padding: 20px;
+}
+.eje4{
+    border-top: 5px solid red;
+    border-right: 3px darkgreen solid;
+    border-bottom: 7px grey solid;
+    border-left: 40px violet solid;
+}
+.eje5{
+    width: 300px;
+    margin: 0 auto;
+    
+    /* para que se vea*/
+    background-color: rgb(199, 193, 193);
+}
+.eje6{
+    width: 200px;
+    height: 200px;
+    padding: 40px;
+    border: 4px solid black;
+}
+.eje7{
+    display: inline-block;
+    margin-right: 10px;
+    /*ayuda visual*/
+    border:2px solid rgb(199, 193, 193);
+}
+.card-8{
+    background-color: burlywood;
+    padding: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+.eje9{
+    background-color: blue;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.card-10{
+    background-color: #ffdddd;
+    border: 1px solid #ebccd1;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 400px;
+
+}
+.aleta-txt{
+    color:#a94442;
+}
