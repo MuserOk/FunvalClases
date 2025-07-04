@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    border: red 2px solid;
+    height: 600px;
+    width: 300px;
+    color: white;
+    position: relative; /*para indicarle que es un padre*/
+    /*top:*/
+    margin: 30px; /*llll*/
+}
+.caja{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caja1{
+    background-color: blueviolet;
+    position: absolute; /*el espacio queda disponile y todo ceden a esa posicion*/
+    /*top: 50px;
+    right: 50px;*/
+    right: 0; /*en relacion al body*/
+    bottom: 0;
+    /*PODRIA SER DE ESTA FORMA SI NO POSICIONO EL CONTENEDOR
+    left:500px;
+    top:200px;*/
+}
+.caja2{
+    background-color: brown;
+    /*position: relative;
+    bottom: 100px;*/
+}
+.caja3{
+    background-color: blue;
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+.caja4{
+    background-color: darkmagenta;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.caja5{
+    background-color: chocolate;
+     position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 10;
+}
+
+/*caja 1 moverese en relacion a padre, en ezquina inf.der*/
+
+/*
+.header{
+
+}*/
+
+/*que posicion falta? posicion absolute, relative, fixed,*/

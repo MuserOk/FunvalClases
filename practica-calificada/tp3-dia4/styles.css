@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(249, 249, 252, 0.959);
+}
+header{
+    background-color: rgb(58, 184, 79);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    height: 60px;
+    width: 100%;
+}
+.caja-barra{
+    background-color: rgba(14, 13, 13, 0.76);
+    color: rgb(197, 192, 192);
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+    height: 40px;
+    width: 100%;
+    position:sticky; /*UN TOQUE MAS*/
+    top:0;
+    z-index:1000;
+}
+
+.subti{
+    color: green;
+}
+.caja-contenedor{
+    background-color: rgb(213, 238, 238);
+    padding-top: 40px;
+    padding-left: 15px;
+    padding-right: 220px;
+    padding-bottom: 120px;
+    height: auto;
+    min-height: 400px;
+    position: relative;
+}
+.img-b{
+    width: 200px;
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+    display: block;
+}
+
+.btn{
+    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+    color:azure;
+    background-color: rgb(81, 206, 81);
+    border: 0;
+    border-radius: 5%;
+}
+.subti{
+    padding-left: 1%; /*PARA COINCIDIR CON EL MARGEN DEL BOX*/
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+}
+.box{
+    background-color: beige;
+    width: 98%; /*CONSIDERÉ CENTRAR TODA LA CAJA*/
+    margin: 0 auto;
+    border: 1px solid gray;
+    padding: 20px;
+}   
+
+.nav-l{
+    padding-top: 15px;
+    padding-left: 40px;
+    padding-bottom:  15px;
+}
+footer{
+    background-color: rgba(14, 13, 13, 0.76);
+    color: aliceblue;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
