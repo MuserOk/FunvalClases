@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="todo">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="./output.css"/>
+        <title>Document</title>
+    </head>
+    <body class="h-screen flex items-center justify-center 
+        flex-col p-4 bg-[url(https://i.pinimg.com/originals/f8/92/ef/f892ef5f50511edca82e83769e91103b.png)]
+        bg-center bg-cover dark:bg-[url(https://www.stickersmurali.com/it/img/asy346-png/folder/products-detalle-png/adesivi-murali-per-bambini-mario-bros-palla-di-fuoco.png)]">
+
+        <h1 class="dark:text-white">hola mundo</h1>
+        <button class="bg-blue-600 text-white p-4 rounded-2xl ml-2" id="btn">
+            Cambio de tema
+        </button>
+        <script>
+            let botonCambio = document.querySelector("#btn");
+            let todo = document.querySelector("#todo");
+            botonCambio.addEventListener("click", function(){
+                todo.classList.toggle("dark");
+            });
+        </script>
+    </body>
+</html>

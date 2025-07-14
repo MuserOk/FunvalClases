@@ -18,6 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .caja1{
     background-color: blueviolet;
@@ -49,10 +50,11 @@
 }
 .caja5{
     background-color: chocolate;
-     position: fixed;
+    position:fixed;
     top: 0;
     right: 0;
     padding: 10px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaC6HxBFlNaRvAXx0w7pKexqikS6ELj9UQEA&s");
     z-index: 10;
 }
 

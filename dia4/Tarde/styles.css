@@ -40,53 +40,59 @@ main{
     display: flex;
     flex-direction: column;
 }
-.imagen-perrito-fondo{
-    height: 300px;
-    -webkit-mask-image: radial-gradient(
-        ellipse at center,
-        black 60%
-        transparent 100%
-    );
-    mask-image: radial-gradient(
-        ellipse at center,
-        black 60%,
-        transparent 100%
-    );
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    
-    -webkit-mask-size: cover;
-    mask-size: cover;
-}
+
+
 .hero{
     display: flex;
+    justify-content: center;
+    min-width: 300px;
+    max-width: 100%;
+    gap: 20px;
+    padding: 40px;
+    align-items: center;
 }
+.imagen-perrito-fondo{
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    
+}
+
 .msg{
-    width: 100px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap:10px;
+    gap: 10px;
+    padding: 10px;
+
+    
 }
 .hero-titulo{
     font-size: 80px;
     color: brown;
+    
 }
 .hero-pa{
     font-size: 20px;
     color: brown;
+    display: flex;
+    justify-content: center;
 }
 .hero-btn{
     padding: 8px;
     background-color: brown;
     color: white;
-    border: none;
+    border-radius: 5px;
 }
 
 
 footer{
     background-color: blueviolet;
-    height: 30%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
 }
 

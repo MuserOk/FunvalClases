@@ -1,20 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(179, 185, 181);
+}
+
 .padre{
     display: flex;
+    flex-wrap: wrap; /* Envuelve en nuevas columnas */
+    /*overflow:auto;*/  /* Scroll si el contenido excede */
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Altura fija para forzar envoltura */
+    width: 300px;
     gap: 8px;
     border: solid 3px red;
     /*padding: 20px;*/
-}
+}      
+
 .hijo-1Izq{
+    /*
     padding: 20px 10px 20px 15px;
+    */
+    width: 50px;
+    height: 50px;
 }
 .hijo-2Der{
+    /*
     padding: 20px 8px 20px 10px;
+    */
+    width: 100px;
+    height: 100px;
 }
 .eje1{
     width:200px;
     height:200px;
     background-color: lightblue;
     padding: 20px;
+    /*
+    border-right: 3px  green solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    */
 }
 .eje2-d1{
     background-color: rebeccapurple;
@@ -36,6 +67,18 @@
     border-right: 3px darkgreen solid;
     border-bottom: 7px grey solid;
     border-left: 40px violet solid;
+    margin: 5px;
+    /*
+    width: 25%; //visualmente
+    padding: 6px; //sobre el contenido
+    background-color: #bd141142;
+    display: flex;
+    justify-content: right;
+    color: white;
+    */
+    
+
+
 }
 .eje5{
     width: 300px;
@@ -67,6 +110,15 @@
     padding: 10px;
     border-radius: 8px;
     cursor: pointer;
+    /*
+    width: 300px; //hacerlo cuadrado
+    height: 300px;
+    border-radius: 100%; //hacerlo redondo
+    color: rgba(231, 109, 109, 0.712);
+    font-size: 100px;
+    display:flex; //poder mover el contenido, posicion original 0,0
+    justify-content: left; 
+    align-items: center;*/
 }
 .card-10{
     background-color: #ffdddd;

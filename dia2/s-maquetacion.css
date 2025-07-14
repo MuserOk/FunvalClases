@@ -1,0 +1,23 @@
+body {
+  background-color: #043959;
+  color: white;
+}
+h1 {
+  text-align: center;
+}
+
+img {
+    border-radius: 8%;
+    height:"70px";
+    width:"70px";
+}
+.lista {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+.subtitulo {
+  font-size: 40px;
+}
+

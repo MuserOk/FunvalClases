@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: burlywood;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    background-color: rgb(207, 122, 122);
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: cursive;
+    
+}
+.contenedorX2{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 15px;
+}
+.caja1{
+    background-color: red;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 100px;
+}
+.caja2{
+    background-color: rgb(52, 194, 219);
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+.caja3{
+    background-color: red;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 100px;
+}
+.conte-pie{
+    /*
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    */
+    
+    display: block;
+    
+
+   
+}
+.pie1{
+    background-color: rgb(202, 202, 31);
+    width: 100%;
+    height: 15px;
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.pie2{
+    background-color: rgb(202, 202, 31);
+    width: 100%;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
