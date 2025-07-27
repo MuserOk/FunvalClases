@@ -1,0 +1,29 @@
+Un espacio ordenado(índice) donde puedo guardar elementos de cualquier tipo (js).
+
+- sintaxis: const array =[];
+
+-ej: const frutas =["pera","manzana","banana"];
+  índices(posición)    0       1         2
+
+Eliminar al final: array.pop();
+Agregar al final: array.push("kiwi");
+
+Eliminar al principio: array.shift();
+Agregar al principio: array.unshift("kiwi");
+
+Eliminar en posicion x: array.splice(posicionInicial, cantidadElemetos);
+
+mostrar los elementos: array.forEach(item => console.log(item));
+
+agregar algo a cada elementos: const arrayCopia = array.map(item => item + "A");
+
+filtrar VARIOS elementos: const arrayFiltrado = array.filter(item => item === "manzana");
+
+Buscar UN elemento: 
+const elementoBuscar = "uva";
+const elementoEncontrado = array.find(item => item === elementoBuscar);
+
+
+
+
+

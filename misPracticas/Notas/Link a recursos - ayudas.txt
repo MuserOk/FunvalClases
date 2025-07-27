@@ -1,0 +1,23 @@
+Documentación sobre HTML, CSS, JS
+	https://developer.mozilla.org/es/ (MDN)
+
+Referencia visual de etiquetas
+	https://htmlreference.io
+
+Validar el código 
+	webappdesign.es
+
+Atajos escritura HTML 
+	Emmet
+
+Ver los cambios en el navegador
+	Live Server (extensión vs Code)
+
+
+Librerias:
+	Bootstrap
+	Tailwind
+
+Frameworks
+	React
+

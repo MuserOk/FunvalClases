@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" id="todo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <script src="./main.js" defer></script>
+    <title>Document</title>
+  </head>
+  <!--
+<body class="dark:bg-slate-800 h-screen flex items-center justify-center">
+    <button id="btn" class=" bg-yellow-500 text-white p-4 rounded-2xl">
+      Dia
+    </button>
+    <img src="data:image/jpeg;base64,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" 
+    alt="fiona princesa" 
+    id="princesa"
+    >
+  </body>
+-->
+  <body >
+    <!--
+  <div class="flex justify-center">
+    <form id="formulario" class="bg-gray-500 flex flex-col gap-6 p-4" action="">
+      <label for=""></label>
+      <input type="text">
+      <label for=""></label>
+      <input type="text">
+      <label for=""></label>
+      <input type="text">
+    </form>
+  </div>
+   <select name="" id="selectorColor">
+      <option value="">Seleciona un color</option>
+      <option value="red">Rojo</option>
+      <option value="blue">Azul</option>
+      <option value="green">Verde</option>
+    </select>
+    <p id="colorTexto">elige un color</p>-->
+    <!--TABLA-->
+    <div class="flex justify-between items-center m-4">
+      <h2 class="px-8">Profesor Kevin</h2>
+            <!-- Modal toggle -->
+      <button
+        data-modal-target="authentication-modal"
+        data-modal-toggle="authentication-modal"
+        class="text-4xl block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-2 pb-1 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        type="button">+</button>
+    </div>
+    <div class="relative overflow-x-auto border-2 m-6">
+      <table
+        class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+      >
+        <thead
+          class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+        >
+          <tr>
+            <th scope="col" class="px-6 py-3"><strong>NOMBRE</strong></th>
+            <th scope="col" class="px-6 py-3"><strong>EDAD</strong></th>
+            <th scope="col" class="px-6 py-3"><strong>PAIS</strong></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200"
+          >
+            <td class="px-6 py-4">Mario</td>
+            <td class="px-6 py-4">35</td>
+            <td class="px-6 py-4">Argentina</td>
+          </tr>
+          <tr
+            class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200"
+          >
+            <td class="px-6 py-4"></td>
+            <td class="px-6 py-4"></td>
+            <td class="px-6 py-4"></td>
+          </tr>
+          <tr class="bg-white dark:bg-gray-800">
+            <td class="px-6 py-4"></td>
+            <td class="px-6 py-4"></td>
+            <td class="px-6 py-4"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+      <!-- Main modal -->
+      <div
+        id="authentication-modal"
+        tabindex="-1"
+        aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+      >
+        <div class="relative p-4 w-full max-w-md max-h-full">
+          <!-- Modal content -->
+          <div class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
+            <!-- Modal header -->
+            <div
+              class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200"
+            >
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                Sign in to our platform
+              </h3>
+              <button
+                type="button"
+                class="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                data-modal-hide="authentication-modal"
+              >
+                <svg
+                  class="w-3 h-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 14"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                  />
+                </svg>
+                <span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-4 md:p-5">
+              <form class="space-y-4" action="#">
+                <div>
+                  <label
+                    for=""
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Nombre</label
+                  >
+                  <input
+                    type="text"
+                    name="Nombre"
+                    id="nombre"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                    placeholder="ejemplo: Juan"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for=""
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Edad</label
+                  >
+                  <input
+                    type="number"
+                    name="Edad"
+                    id="edad"
+                    placeholder="ejemplo: 20"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for=""
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >Pais</label
+                  >
+                  <input
+                    type="text"
+                    name="Pais"
+                    id="pais"
+                    placeholder="ejemplo: Argentina"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                    required
+                  />
+                </div>
+                <div class="flex justify-between">
+                
+                <button
+                  type="submit"
+                  class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  Login to your account
+                </button>
+              
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

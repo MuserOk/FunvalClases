@@ -1,0 +1,163 @@
+DOM (Modelo de Objetos de Documentos: Jerarquia estructurada de elementos que conforman mi HTML.
+
+Los elementos: nodos y objetos manipulables por js
+	nodo: un punto especifico
+	  
+
+js: con propiedades, métodos, eventos
+
+los Id son útiles para seleccionar los elementos del DOM en js
+
+en HTML: <script src="./file.js" defer></scrpt>
+
+
+
+----------------------------------------------------------
+
+
+
+
+APLICAR ESTILOS
+
+1.Seleccionar el elemento: 
+	const elemento = document.querySelector(".elementoId");
+
+2. Asignar Estilo
+	elemento.style.bckgroundColor = "blue"; 
+	
+seria: (nombreDeElemento style propiedad)
+
+Ej: estilo a textos
+
+const lista = document.getElementById("listaId");
+console.log(lista.innerText);   SOLO MUESTRA TEXTO
+
+console.log(lista.textContex);  MUESTRA LOS ESPACIOS DE LA IDENTACION
+
+APLICANDO: 
+const titulo = document.getElementById("titulo");
+
+titulo.innerText = "Nuevo Titulo";
+
+
+3. Modificar ATRIBUTOS
+
+const enlace = documentElementByTagName("a");  TRABAJAREMOS CON LA ETIQUETA <a>…
+
+console.log(enlaces.getAttribute("href"));	VER
+console.log(enlaces.removeAttribute("href"));	ELIMINAR
+console.log(enlaces.setAttribute("href", "nuevoEnlace"));	MODIFICAR
+
+	
+
+
+4. Agregar o eliminar Clases
+
+const clase = document.querySelecto(".clase");
+
+console.log(clase.classList);	VER 
+
+clase.classList.add("otroNombre"); 	AGREGAR CLASE
+
+clase.classList.containt("bg-red");    BUSCAR CLASE
+
+clase.classList.remove("clase");
+
+
+
+	
+5. CREAR ELEMENTO
+
+	1-REFERENCIA DONDE AGREGAR
+const listaDeToping = document.getElementById("lista-toping);
+
+	2-CREAR ELEMENTO
+const topingNuevo = document.createElement("li"); 
+
+	3-AGREGAR UN ELEMENTO
+  1-topingNuevo.classList.add("clase1","clase2"); PRIMERO AGREGAR CLASE
+  2-topinNuevo.innerText = "nombre nueva lista"; AGREGAR TEXTO
+  
+  3-topingNuevo.append(topingNuevo); AHORA SI AGREGAMOS LA NUEVA LISTA AL CONTENEDOR
+
+         4-ELIMINAR UN ELEMENTO
+topingNuevo.remove();
+
+
+
+6- RECORRER EL DOM
+
+Indirectamente: 
+------desde el hijo encontrar al padre
+lista.parentElement
+lista.parentNode
+------desde el hijo encontrar al abuelo
+lista.parentElement.parentElement
+
+------desde el padre al hijo
+lista.children
+lista.firstChild
+
+lista.firstElementChild   MEJOR
+
+------desde el hijo al hermano
+lista.previeusElementSibling
+lista.nextElementSibling
+
+
+7- EVENTOS
+
+"Resultados de la interacción con el usuario"
+
+Event Listener //COMO ESCUCHADOR DE EVENTOS
+asociaar EVENTO con una FUNCION 
+
+
+
+------addEventListener----
+
+
+1-TRAER EL ELEMENTO EN ESTE CASO MEDIANTE ID
+const objetoManipulable = document.getElementById("elementoId");
+	
+2-CREAR LA FUNCION A REALIZAR (ACCIONES)
+function mostrarClick(e) {
+	console.log(e.target.innerText);
+}
+
+3-ASOCIAR
+objetoManipulable.addEventListener("click", mostrarClick);
+
+
+
+
+1- TRAER TODA LA LISTA MEDIANTE LAS CLASES
+const objetosManipulable = document.getElementByClassName("claseDeLosElementos");
+
+2-CREAR LA FUNCION A REALIZAR (ACCIONES)
+function mostrarClic(e) {
+	console.log(e.target.innerText);
+}
+
+3-ASOCIAR
+for (const claseDeLosElementos of objetosManipulables) {
+	claseDeLosElementos.addEventListener("clck",mostrarClic);
+}
+
+LA FUNCION INCLUIDA MIENTRAS ASOCIAMOS
+
+	for (const claseDeLosElementos de ObjetosManipulables) {
+	claseDeLosElementos.addEventListener("click", (e) =>{
+	console.log(e.target.innerText);
+	});
+}
+
+
+
+
+
+
+
+
+
+

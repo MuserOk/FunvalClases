@@ -1,0 +1,74 @@
+-----------------ESTRUCTURA----------------------
+<!DOCTYPE html>		//Declara que es un documento HTML5
+<html lang="es">        //Es la raíz del documento HTML
+			//lang: atributo idioma
+  <head>		//información NO visible
+    <meta charset="UTF-8" />  //Acepta caracteres especiales
+    <title>Título de la página</title>  //Titulo 
+  </head>
+
+  <body>		//Contiene todo el contenido visible
+    
+
+  </body>
+
+</html>
+
+------------------ETIQUETAS--------------------
+
+<header>		//Encabezado  /al inicio del body o dentro de un section.
+<nav>			//área de navegación  /dentro del header
+<main> 			//contenido principal  /solo uno
+<section>		//temática   /dentro de main ó article
+<article>		//independiente  /dentro de main ó section
+<aside>			//secundario   /al lado de main ó section  /para anuncios o enlaces
+<footer> 		//Pie de página /al final del body o section
+
+
+---------------ETIQUETAS DE CONTENIDOS---------------
+
+<h1> A <h6> 		//Titulos   
+<p>			//párrafos
+<a href=""> 		//enlaces   /a pagina ó SECTION
+
+<img src="" alt="">		//imágenes  /rutas relativas o absolutas /detro de picture
+<picture>		//distintas imágenes según responsividad
+<source>		// define imagen según condiciones  /dentro de PICTURE
+<video>			//Mp4, webm, ogv  /con source
+<audio>			//Mp3, Ogg, wav   /con source
+
+
+<ul> / <ol>		//listas ordenada-desordenda
+<li> 		//item de lista   /siempre dentro de ul - ol
+<strong>		//negrita a texto
+<em> 			//cursiva a texto
+<br> 			//salto de linea
+<hr> 			//linea horizontal suave
+
+
+--------------ETIQUETAS INTERACTIVAS------------------
+
+<button>		//botón 
+<form>			//formulario
+<input>			//campo de entrada
+<label> 		//etiqueta para input
+<textarea>		//área de texto grande
+<select> / <option>	//menú desplegable
+
+----------------ETIQUETAS ORGANIZACION----------------
+
+<div>		//contenedor genérico
+<span>		//contenedor en linea  /para partes pequeñas
+<script>	//insertar script js   /en head ó al final del body
+<link> 		//enlaza archivos externos  /en el head
+<style>			//css directo /NO RECOMENDABLE
+<meta> 			//info del doc
+
+
+-------------------------------------------------------
+
+
+
+
+
+

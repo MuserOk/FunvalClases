@@ -1,0 +1,8 @@
+DOM (Document Object Model)		//el árbol HTML que manipula js
+
+Responsive Design			//Diseño adaptable a diferentes tamaños de pantalla.
+
+Accesibilidad (a11y)			//Hacer tu sitio usable para personas con discapacidades.
+
+SEO (Search Engine Optimization)	//Mejorar cómo aparece tu sitio en buscadores.
+

@@ -1,0 +1,52 @@
+GIT: Sistema de control de versiones (2005)
+
+----------------Ramas----------------------
+1-LOCAL:crear nueva carpeta
+	- abrir con vs code
+3-VsCode: crear archivos dentro (HTML, js, Css)
+	crear .gitignore y colocar el nodemodules
+4-GitHub: en git crear un nuevo repositorio (publico)
+5-VsCode: iniciar git y comitear 
+	1-git init / 
+	2-git add . /
+	3-git commit -m "algo" / 
+	4-git remote add origin <url del repo>
+	5-git push -u origin master  PARA QUE EL EQUIPO TENGA LA ULTIMA VERSION
+
+-----añadir ramas------
+Scrum Master
+1-Github: en repositorio
+	> Seting 
+	 > colaboradores
+	  > autenticar
+	   > add people (nombre usuario GitHub)
+Equipo
+1-GitHub: aceptar la invitación
+2-VsCode: clonar el repo
+	1-Local: crear carpeta e ingresar con VsCode
+	2-VsCode: clonar repositorio (git clone <url repo>
+3-VsCode: cerrar carpeta.
+4-Local: entrar en la carpeta creada.
+	entrar con VsCode a la carpeta clonada
+	npm i para cargar lo que faltan
+5-VsCode: crear una rama
+	1-git Branch nuevaRama
+	2-git checkout nuevaRama 
+
+
+
+------Subir cambios-----
+Equipo
+1-VsCode: git push origin nuevaRama
+2-GitHub: > Pull Request
+	   > Compared (desde hacia)
+	    > Crear
+	     > Resolver conflictos
+		ANTES DE MERGE... es mejor que otro lo revise.
+	      > commitear el merge (NUNCA PUSH)
+Scrum Master
+1-VsCode: git pull origin master
+	
+-----------------------------------------------------------
+
+
