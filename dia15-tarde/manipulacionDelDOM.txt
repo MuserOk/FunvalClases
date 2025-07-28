@@ -1,0 +1,19 @@
+Forma de vincular nuestro HTML con JavaScript: 
+    en js creamos una variable: lista
+
+        let lista = document.querySelector("  ") //selecciona por etiqueta ("li"), id("#id"), clase(".clase") (SOLO EL PRIMER ELEMENTO)
+
+    en HTML creamos sea la etiqueta, el id, o la clase donde vamos a trabajar
+
+
+agregar elementos al HTML desde js: 
+
+     lista.innerHTML  ...;
+
+modificar el texto de una etiqueta:
+
+    variable.textContent = "nuevo texto";
+
+
+tips: 
+podemos crear parte de lo que vamos a trabajar en el html y lo que trabajearemos en .js
